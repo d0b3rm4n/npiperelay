@@ -1,3 +1,14 @@
+# How build works for me in WSL...
+
+```bash
+GOOS=windows go build -o npiperelay.exe github.com/jstarks/npiperelay
+GOOS=windows go get -d github.com/lexicality/wsl-relay
+GOOS=windows go build -o /mnt/c/Users/<USER>/wsl-relay.exe .
+```
+Output in a WSL folder somehow didn't work?!
+
+## Original README below...
+
 # npiperelay
 
 npiperelay is a tool that allows you to access a Windows named pipe in a way
